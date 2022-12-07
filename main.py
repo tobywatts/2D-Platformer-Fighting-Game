@@ -14,7 +14,6 @@ running = True
 while running:
   if (newTime - startTime) >= 1 / FPS:
         deltaTime = (newTime - startTime)
-        # print(1/deltaTime)
         startTime = newTime
 
         heldKeys = pygame.key.get_pressed()
