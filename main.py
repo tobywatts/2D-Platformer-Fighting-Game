@@ -7,11 +7,15 @@ screen_width = 1000
 screen_height = 700  
 win = pygame.display.set_mode((screen_width, screen_height))
 
+playerX = 0
+playerY = 0
+
 startTime = time.time()
 deltaTime = 0
 running = True
 
 while running:
+  
   if (newTime - startTime) >= 1 / FPS:
         deltaTime = (newTime - startTime)
         startTime = newTime
